@@ -83,7 +83,7 @@ const Projects = () => {
                {/* Button to toggle project links */}
         <button
           onClick={() => setShowProjects(!showProjects)}
-          className="bg-violet-700 text-white py-2 px-4 rounded-md hover:bg-violet-800 transition-all"
+          className="bg-violet-700 text-white py-2 px-4 rounded-md hover:bg-violet-800 transition-all mt-5"
         >
           {showProjects ? 'Hide' : 'Show Model Projects'}
         </button>
