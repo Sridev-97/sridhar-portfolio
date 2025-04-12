@@ -1,4 +1,3 @@
-import { useSpring, animated } from "@react-spring/web";
 import { useEffect } from "react";
 import Header from "./components/Header";
 import About from "./components/About";
@@ -9,13 +8,7 @@ import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 
-function App() {
-  const fadeIn = useSpring({
-    opacity: 1,
-    from: { opacity: 0 },
-    config: { tension: 100, friction: 40 }
-  });
-
+function App() {  
   useEffect(() => {
     document.documentElement.style.scrollBehavior = "smooth";
   }, []);
