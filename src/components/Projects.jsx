@@ -80,74 +80,71 @@ const Projects = () => {
           ))}
         </div>
 
-        <h3 className="text-xl font-semibold mb-2">Project Work</h3>
+               {/* Button to toggle project links */}
+        <button
+          onClick={() => setShowProjects(!showProjects)}
+          className="bg-violet-700 text-white py-2 px-4 rounded-md hover:bg-violet-800 transition-all"
+        >
+          {showProjects ? 'Hide' : 'Show Model Projects'}
+        </button>
 
-{/* Button to toggle project links */}
-<button
-  onClick={() => setShowProjects(!showProjects)}
-  className="bg-violet-700 text-white py-2 px-4 rounded-md hover:bg-violet-800 transition-all"
->
-  {showProjects ? 'Hide Projects' : 'Show My Projects'}
-</button>
-
-{/* Collapsible Section */}
-{showProjects && (
-  <div className="mt-4 space-y-3">
-    <h4 className="text-lg font-semibold">Model Projects</h4>
-    <ul className="list-disc pl-5 space-y-2 text-blue-700">
-      <li>
-        <a
-          href="https://roots-rouge.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:underline"
-        >
-          🌱 Roots – Eco-friendly Product Store
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://sridev-97.github.io/Greenden/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:underline"
-        >
-          🌿 Greenden – Plant Selling Site (HTML/CSS)
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://sridev-97.github.io/nostra-ecommerce/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:underline"
-        >
-          👕 Nostra – Clothing Store (HTML/CSS)
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://sridev-97.github.io/quiz/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:underline"
-        >
-          🧠 Quiz App with Timer (Javascript)
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://weather-app-murex-beta.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:underline"
-        >
-          ⛅ Weather app (React)
-        </a>
-      </li>
-    </ul>
-  </div>
-)}
+        {/* Collapsible Section */}
+        {showProjects && (
+          <div className="mt-4 space-y-3">
+            <ul className="list-disc pl-5 space-y-2 text-blue-700">
+              <li>
+                <a
+                  href="https://roots-rouge.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  🌱 Roots – Eco-friendly Product Store
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://sridev-97.github.io/Greenden/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  🌿 Greenden – Plant Selling Site (HTML/CSS)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://sridev-97.github.io/nostra-ecommerce/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  👕 Nostra – Clothing Store (HTML/CSS)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://sridev-97.github.io/quiz/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  🧠 Quiz App with Timer (Javascript)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://weather-app-murex-beta.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  ⛅ Weather app (React)
+                </a>
+              </li>
+            </ul>
+          </div>
+        )}
       </div>
     </section>
   );
