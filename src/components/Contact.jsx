@@ -38,7 +38,7 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="text-blue-600 underline"
                 >
-                  github.com/YOUR_GITHUB_USERNAME
+                  Sridhar-Ananth
                 </a>
               </p>
             </div>
