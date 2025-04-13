@@ -15,6 +15,12 @@ const Education = () => {
               <p className="text-sm text-gray-600">Error Makes Clever Academy</p>
               <p className="text-sm text-gray-600">Completed</p>
             </div>
+
+            <div className="bg-gray-100 rounded-xl shadow p-6">
+              <h3 className="text-lg font-semibold">Power BI Masterclass Workshop</h3>
+              <p className="text-sm text-gray-600">Office Master</p>
+              <p className="text-sm text-gray-600">Completed</p>
+            </div>
           </div>
         </div>
       </section>
